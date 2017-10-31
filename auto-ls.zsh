@@ -16,4 +16,4 @@ auto-ls () {
 
 zle -N auto-ls
 zle -N accept-line auto-ls
-add-zsh-hook chpwd auto-ls
+chpwd_functions+=(auto-ls)
