@@ -1,5 +1,9 @@
 # vim: sw=2 ts=2 et!
-AUTO_LS_COMMANDS=(ls git-status)
+# set up default functions
+if [[ $#AUTO_LS_COMMANDS -eq 0 ]]; then
+  AUTO_LS_COMMANDS=(ls git-status)
+fi
+
 auto-ls-ls () {
   ls
   echo ""
