@@ -14,7 +14,9 @@ There are many `auto-ls`s out there but this one is mine.
 
 # Configuration
 
-- `AUTO_LS_COMMANDS`: Use this configuration option to define the functions to run on cwd/enter-key. Example: `AUTO_LS_COMMANDS=(ls git-status)`
+- `AUTO_LS_COMMANDS`: Use this configuration option to define the functions to run on cwd/enter-key.
+
+Example: `AUTO_LS_COMMANDS=(ls git-status)`
 
 # Customization
 
@@ -22,10 +24,10 @@ You may redefine default functions or define custom functions to be run on cwd/e
 
 - Before loading auto-ls define a function to be executed
 
-    auto-ls-custom_function () {
-      echo "Current directory list:"
-      ls -ltra
-    }
+      auto-ls-custom_function () {
+        echo "Current directory list:"
+        ls -ltra
+      }
 
 * Be sure to call it `auto-ls-`<name of your function>.
 
