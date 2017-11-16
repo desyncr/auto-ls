@@ -4,6 +4,7 @@ There are many `auto-ls`s out there but this one is mine.
 
 # Features
 
+- Custom command on `cwd` change/`enter-key`
 - Auto `ls` on `cwd` change
 - Auto `ls` on `enter-key` (with empty buffer)
 - Git status on a git work tree
