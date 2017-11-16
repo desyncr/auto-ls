@@ -22,7 +22,7 @@ Example: `AUTO_LS_COMMANDS=(ls git-status)`
 
 You may redefine default functions or define custom functions to be run on cwd/enter-key:
 
-- Before loading auto-ls define a function to be executed
+- Before loading auto-ls define a function to be executed:
 
       auto-ls-custom_function () {
         echo "Current directory list:"
@@ -32,13 +32,11 @@ You may redefine default functions or define custom functions to be run on cwd/e
 
     * Be sure to call it `auto-ls-`\<name of your function\>.
 
-- Configure auto-ls to load your function
+- Configure auto-ls to load your function. Put the following line before sourcing auto-ls:
 
-Put the following line before sourcing auto-ls:
+      AUTO_LS_COMMANDS=(custom_function)
 
-    AUTO_LS_COMMANDS=(custom_function)
-
-   * Only use <name of your function> rather than `auto-ls-`\<name of your function\>.
+   * Only use \<name of your function\> rather than `auto-ls-`\<name of your function\>.
     
 You may as well load the default functions, `ls` and `git-status`:
 
