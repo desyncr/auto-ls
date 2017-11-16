@@ -29,7 +29,7 @@ You may redefine default functions or define custom functions to be run on cwd/e
         ls -ltra
       }
 
-* Be sure to call it `auto-ls-`<name of your function>.
+* Be sure to call it `auto-ls-`\<name of your function\>.
 
 - Configure auto-ls to load your function
 
@@ -41,7 +41,7 @@ You may as well load the default functions, `ls` and `git-status`:
 
     AUTO_LS_COMMANDS=(ls git-status custom_function)
 
-* Only use <name of your function> rather than `auto-ls-`<name of your function>.
+* Only use <name of your function> rather than `auto-ls-`\<name of your function\>.
 
 # Future
 
