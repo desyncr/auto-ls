@@ -31,6 +31,7 @@ You may redefine default functions or define custom functions to be run on cwd/e
 
 
     * Be sure to call it `auto-ls-`\<name of your function\>.
+    * It can be a binary instead of a function, but be sure it's located in `$PATH` and with the proper `+x` flags.
 
 - Configure auto-ls to load your function. Put the following line before sourcing auto-ls:
 
