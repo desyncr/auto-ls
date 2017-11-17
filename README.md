@@ -11,8 +11,16 @@ There are many `auto-ls`s out there but this one is mine.
 
 # Install
 
+
+- Antigen
+
     antigen bundle desyncr/auto-ls
 
+- Manual
+
+    curl -L https://git.io/auto-ls > /path/to/auto-ls.zsh
+    source /path/to/auto-ls.zsh
+    
 # Configuration
 
 - `AUTO_LS_COMMANDS`: Use this configuration option to define the functions to run on cwd/enter-key.
