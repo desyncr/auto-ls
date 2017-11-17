@@ -29,4 +29,7 @@ auto-ls () {
 
 zle -N auto-ls
 zle -N accept-line auto-ls
-chpwd_functions+=(auto-ls)
+
+if [[ ${chpwd_functions[(i)auto-ls]} -gt ${#chpwd_functions} ]]; then
+  chpwd_functions+=(auto-ls)
+fi
