@@ -11,15 +11,14 @@ There are many `auto-ls`s out there but this one is mine.
 
 # Install
 
-
-- Antigen
-
-      antigen bundle desyncr/auto-ls
-
 - Manual
 
       curl -L https://git.io/auto-ls > /path/to/auto-ls.zsh
       source /path/to/auto-ls.zsh
+
+- [Antigen](https://github.com/zsh-users/antigen)
+
+      antigen bundle desyncr/auto-ls
     
 # Configuration
 
