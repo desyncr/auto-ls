@@ -19,7 +19,13 @@ auto-ls () {
   if [[ $#BUFFER -eq 0 ]]; then
     zle && echo ""
     for cmd in $AUTO_LS_COMMANDS; do
-      auto-ls-$cmd
+      # If we detect a command with full path, ex: /bin/ls execute it
+      if [[ $AUTO_LS_PATH != false && $cmd =~ '/' ]]; then
+        eval $cmd
+      else
+        # Otherwise run auto-ls function
+        auto-ls-$cmd
+      fi
     done
     zle && zle redisplay
   else
