@@ -6,7 +6,7 @@ fi
 
 auto-ls-ls () {
   ls
-  echo ""
+  [[ $AUTO_LS_NEWLINE != false ]] && echo ""
 }
 
 auto-ls-git-status () {
