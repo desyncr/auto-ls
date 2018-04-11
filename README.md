@@ -20,6 +20,11 @@ There are many `auto-ls`s out there but this one is mine.
 
       antigen bundle desyncr/auto-ls
 
+- [zplugin](https://github.com/zdharma/zplugin)
+
+      zplugin ice wait'0' lucid
+      zplugin load desyncr/auto-ls
+
 # Configuration
 
 - `AUTO_LS_COMMANDS`: Use this configuration option to define the functions to run on cwd/enter-key.
