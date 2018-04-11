@@ -34,6 +34,10 @@ Example: `AUTO_LS_NEWLINE=false`
 
 Example: `AUTO_LS_PATH=false`
 
+-  `AUTO_LS_CHPWD`: Enable/disable auto-ls on directory change (Default: true)
+
+Example: `AUTO_LS_CHPWD=false`
+
 # Customization
 
 You can configure commands in order to execute on `cwd`/`ls`, example:
