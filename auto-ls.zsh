@@ -1,5 +1,10 @@
 # vim: sw=2 ts=2 et!
 # set up default functions
+
+if (( ! ${+AUTO_LS_CHPWD} )); then
+  AUTO_LS_CHPWD=true
+fi
+
 if [[ $#AUTO_LS_COMMANDS -eq 0 ]]; then
   AUTO_LS_COMMANDS=(ls git-status)
 fi
@@ -36,6 +41,6 @@ auto-ls () {
 zle -N auto-ls
 zle -N accept-line auto-ls
 
-if [[ ${chpwd_functions[(I)auto-ls]} -eq 0 ]]; then
+if [[ ${AUTO_LS_CHPWD} == true && ${chpwd_functions[(I)auto-ls]} -eq 0 ]]; then
   chpwd_functions+=(auto-ls)
 fi
