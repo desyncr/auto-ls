@@ -9,6 +9,15 @@ if [[ $#AUTO_LS_COMMANDS -eq 0 ]]; then
   AUTO_LS_COMMANDS=(ls git-status)
 fi
 
+if (( ! ${+AUTO_LS_NEWLINE} )); then
+  AUTO_LS_NEWLINE=true
+fi
+
+if (( ! ${+AUTO_LS_PATH} )); then
+  AUTO_LS_PATH=true
+fi
+
+
 auto-ls-ls () {
   ls
   [[ $AUTO_LS_NEWLINE != false ]] && echo ""
