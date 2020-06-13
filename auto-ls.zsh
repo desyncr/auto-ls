@@ -47,6 +47,7 @@ auto-ls () {
         auto-ls-$cmd
       fi
     done
+    zle && zle .accept-line
   fi
 
   # Forward this event down the ZLE stack
