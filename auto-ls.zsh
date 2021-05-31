@@ -19,7 +19,7 @@ fi
 
 
 auto-ls-ls () {
-  ls
+  ls --color=auto -a
   [[ $AUTO_LS_NEWLINE != false ]] && echo ""
 }
 
